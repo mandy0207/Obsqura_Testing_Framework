@@ -20,5 +20,6 @@ public class SearchProductTest extends BaseTest {
 		
 		ProductsPage pp = new ProductsPage(driver);
 		pp.ClickSearchBtn();
+		pp.ValidateSearchProduct("Maggi");
 	}
 }

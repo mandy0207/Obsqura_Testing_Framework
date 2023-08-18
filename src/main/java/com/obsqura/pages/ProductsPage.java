@@ -19,13 +19,15 @@ public class ProductsPage {
 	@FindBy(xpath = "//a[@class='btn btn-rounded btn-primary']")
 	private WebElement searchBtn;
 	
+	@FindBy(xpath = "//input[@placeholder='Title']")
+	private WebElement title_input;
 	
 	
 	public void ClickSearchBtn() {
 		searchBtn.click();
 	}
 	
-	public void ValidateSearchProduct() {
-		
+	public void ValidateSearchProduct(String productName) {
+		title_input.sendKeys(productName);
 	}
 }
