@@ -9,6 +9,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class BaseTest {
 	WebDriver driver;
 
@@ -19,6 +21,7 @@ public class BaseTest {
 		String browserName = "Chrome";
 		if (browserName.equals("Chrome")) {
 			driver = new ChromeDriver();
+			
 		}
 
 		else if (browserName.equals("Edge")) {
@@ -35,8 +38,9 @@ public class BaseTest {
 
 	}
 	
-	@AfterClass
-	public void TearDown() {
-		driver.quit();
-	}
+//	@AfterClass
+//	public void TearDown() {
+//
+//		driver.quit();
+//	}
 }

@@ -1,5 +1,6 @@
 package com.obsqura.pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -19,18 +20,18 @@ public class LoginPage {
 	 */
 
 	@FindBy(xpath = "//input[@placeholder='Username']")
-	WebElement username;
+	private WebElement username;
 
-	
+
 	@FindBy(css ="input[placeholder='Password']")
-	WebElement password;
+	private WebElement password;
 
 	@FindBy(xpath = "//button[@type='submit']")
-	WebElement submitBtn;
+	private WebElement submitBtn;
 	
 	
 	public void Login() {
-		username.sendKeys("admin");
+	    username.sendKeys("admin");
 		password.sendKeys("admin");
 		submitBtn.click();
 	}
