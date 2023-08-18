@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
+import org.testng.Assert;
 public class ProductsPage {
 
 	
@@ -22,6 +22,12 @@ public class ProductsPage {
 	@FindBy(xpath = "//input[@placeholder='Title']")
 	private WebElement title_input;
 	
+	@FindBy(xpath = "//button[@name='Search']")
+	private WebElement searchProductBtn;
+	
+	@FindBy(xpath = "//table//tbody//tr//td")
+	private WebElement productTitle;
+
 	
 	public void ClickSearchBtn() {
 		searchBtn.click();
@@ -29,5 +35,19 @@ public class ProductsPage {
 	
 	public void ValidateSearchProduct(String productName) {
 		title_input.sendKeys(productName);
+		searchProductBtn.click();
+		String text=productTitle.getText();
+		System.out.println(text);
+		
+		if(text.contains(productName)) {
+			Assert.assertTrue(true);
+		}
+		else {
+			Assert.assertTrue(false);
+		}
+		
+		
+	
+		
 	}
 }

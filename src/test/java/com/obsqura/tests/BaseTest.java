@@ -38,9 +38,9 @@ public class BaseTest {
 
 	}
 	
-//	@AfterClass
-//	public void TearDown() {
-//
-//		driver.quit();
-//	}
+	@AfterClass
+	public void TearDown() {
+
+		driver.quit();
+	}
 }

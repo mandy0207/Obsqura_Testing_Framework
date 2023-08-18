@@ -1,5 +1,6 @@
 package com.obsqura.tests;
 
+
 import org.testng.annotations.Test;
 
 import com.obsqura.pages.HomePage;
@@ -20,6 +21,9 @@ public class SearchProductTest extends BaseTest {
 		
 		ProductsPage pp = new ProductsPage(driver);
 		pp.ClickSearchBtn();
+		
 		pp.ValidateSearchProduct("Maggi");
+		
+		
 	}
 }
