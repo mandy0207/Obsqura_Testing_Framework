@@ -23,6 +23,7 @@ public class HomePage extends PageUtility {
 	private WebElement manageProduct;
 	
 	public void NavigateToManageProduct() {
-		manageProduct.click();
+		
+		ClickElement(manageProduct);
 	}
 }

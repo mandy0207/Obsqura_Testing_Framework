@@ -49,8 +49,6 @@ public class ProductsPage extends PageUtility {
 		else {
 			Assert.assertTrue(false);
 		}
-		
-		
 	
 		
 	}

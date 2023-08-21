@@ -15,8 +15,10 @@ public class PageUtility {
 	public PageUtility(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
-		 wait= new WebDriverWait(driver, Duration.ofSeconds(8));
+		wait= new WebDriverWait(driver, Duration.ofSeconds(8));
 	}
+	
+	
 	/**
 	 * Utility or wrapper for ClickElement
 	 * @param element
@@ -40,6 +42,6 @@ public class PageUtility {
 	 * @param element
 	 */
 	public void WaitUntilVisible(WebElement element) {
-		
+	
 	}
 }

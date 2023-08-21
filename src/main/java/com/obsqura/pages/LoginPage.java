@@ -1,6 +1,6 @@
 package com.obsqura.pages;
 
-import org.openqa.selenium.By;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -13,7 +13,7 @@ public class LoginPage extends PageUtility {
 	WebDriver driver;
 
 	public LoginPage(WebDriver driver) {
-		super(driver);
+        super(driver);
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
@@ -34,11 +34,14 @@ public class LoginPage extends PageUtility {
 	
 	
 	public void Login() {
+
+		username.sendKeys("admin");
 		SetTextBox(username, "admin");
 		SetTextBox(password, "admin");
 		ClickElement(submitBtn);
-
-		
+	
 	}
+	
+
 
 }
