@@ -10,22 +10,20 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeSuite;
 
 import com.obsqura.utilities.TestProperties;
 
 public class BaseTest {
 	WebDriver driver;
-
+	Properties prop;
 
 	@BeforeClass
-	public void InitializeDriver() throws IOException {
-		Properties prop = TestProperties.GetProperties();
+	public void InitializeDriver()  {
 		String browserName=prop.getProperty("browser");
 		String Environment = prop.getProperty("Environment");
 		String Url = prop.getProperty(Environment);
-        System.out.println(Environment);
-		System.out.println(browserName);
-		
+			
 		if (browserName.equals("Chrome")) {
 			driver = new ChromeDriver();
 			
@@ -44,6 +42,12 @@ public class BaseTest {
 		driver.get(Url);
 
 	}
+	@BeforeSuite
+	public void ReadProperties() throws IOException
+	{
+		prop = TestProperties.GetProperties();  
+	}
+	
 	
 	@AfterClass
 	public void TearDown() {
