@@ -1,6 +1,8 @@
 package com.obsqura.tests;
 
+import java.io.IOException;
 import java.time.Duration;
+import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -9,16 +11,21 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+import com.obsqura.utilities.TestProperties;
 
 public class BaseTest {
 	WebDriver driver;
 
 
 	@BeforeClass
-	public void InitializeDriver() {
+	public void InitializeDriver() throws IOException {
+		Properties prop = TestProperties.GetProperties();
+		String browserName=prop.getProperty("browser");
+		String Environment = prop.getProperty("Environment");
+		String Url = prop.getProperty(Environment);
+        System.out.println(Environment);
+		System.out.println(browserName);
 		
-		String browserName = "Chrome";
 		if (browserName.equals("Chrome")) {
 			driver = new ChromeDriver();
 			
@@ -34,7 +41,7 @@ public class BaseTest {
 
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-		driver.get("https://groceryapp.uniqassosiates.com/admin/login");
+		driver.get(Url);
 
 	}
 	
