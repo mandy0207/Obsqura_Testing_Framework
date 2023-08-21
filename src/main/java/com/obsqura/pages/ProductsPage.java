@@ -5,12 +5,15 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
-public class ProductsPage {
+
+import com.obsqura.utilities.PageUtility;
+public class ProductsPage extends PageUtility {
 
 	
 	WebDriver driver;
 
 	public ProductsPage(WebDriver driver) {
+		super(driver);
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
@@ -33,6 +36,7 @@ public class ProductsPage {
 		searchBtn.click();
 	}
 	
+
 	public void ValidateSearchProduct(String productName) {
 		title_input.sendKeys(productName);
 		searchProductBtn.click();

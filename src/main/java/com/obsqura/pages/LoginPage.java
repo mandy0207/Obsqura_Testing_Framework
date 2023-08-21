@@ -6,11 +6,14 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LoginPage {
+import com.obsqura.utilities.PageUtility;
+
+public class LoginPage extends PageUtility {
 
 	WebDriver driver;
 
 	public LoginPage(WebDriver driver) {
+		super(driver);
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
@@ -31,9 +34,11 @@ public class LoginPage {
 	
 	
 	public void Login() {
-	    username.sendKeys("admin");
-		password.sendKeys("admin");
-		submitBtn.click();
+		SetTextBox(username, "admin");
+		SetTextBox(password, "admin");
+		ClickElement(submitBtn);
+
+		
 	}
 
 }
