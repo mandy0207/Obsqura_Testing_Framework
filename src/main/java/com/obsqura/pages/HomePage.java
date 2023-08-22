@@ -22,8 +22,19 @@ public class HomePage extends PageUtility {
 	@FindBy(xpath = "//*[contains(text(),'Manage Product')]")
 	private WebElement manageProduct;
 	
+	@FindBy(xpath = "(//*[contains(text(),'Manage Expense')])[1]")
+	private WebElement manageExpenseDropdown;
+	
+	@FindBy(xpath = "(//*[contains(text(),'Manage Expense')])[2]")
+	private WebElement manageExpense;
+	
 	public void NavigateToManageProduct() {
 		
 		ClickElement(manageProduct);
+	}
+	
+	public void NavigateToManageExpense() {
+		ClickElement(manageExpenseDropdown);
+		ClickElement(manageExpense);
 	}
 }
