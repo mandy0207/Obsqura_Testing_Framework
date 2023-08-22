@@ -21,6 +21,7 @@ public class CreateandDeleteExpense  extends BaseTest{
 		ExpenseCategoryPage ecp = new ExpenseCategoryPage(driver);
 		String date=DateUtility.GetCurrentDate();
 		ecp.CreateUniqueTitle(date);
+		ecp.ValidateUniqueNameIsCreated();
 		ecp.DeleteExpenseCategory(date);
 			
 	}
