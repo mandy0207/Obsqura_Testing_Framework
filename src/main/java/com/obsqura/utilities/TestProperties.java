@@ -5,13 +5,15 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
+import com.obsqura.constants.Constants;
+
 public class TestProperties {
 
 	
 	public static Properties GetProperties() throws IOException {
 		
 		Properties prop = new Properties();
-		FileInputStream fis = new FileInputStream("C:\\Sask\\Code\\workspace\\ObsquraTestAutomationFramework\\src\\main\\resources\\Configurations\\Config.properties");
+		FileInputStream fis = new FileInputStream(Constants.configFilePath);
 		prop.load(fis);
 		return prop;
 	}

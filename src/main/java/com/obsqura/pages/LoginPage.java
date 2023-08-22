@@ -34,13 +34,13 @@ public class LoginPage extends PageUtility {
 	
 	
 	public void Login() {
-
-		username.sendKeys("admin");
 		SetTextBox(username, "admin");
 		SetTextBox(password, "admin");
 		ClickElement(submitBtn);
 	
 	}
+	
+	
 	
 
 

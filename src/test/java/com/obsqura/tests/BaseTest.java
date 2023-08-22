@@ -12,6 +12,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 
+import com.obsqura.Exception.NoBrowserFoundException;
 import com.obsqura.utilities.TestProperties;
 
 public class BaseTest {
@@ -34,7 +35,8 @@ public class BaseTest {
 		} else if (browserName.equals("Firefox")) {
 			driver = new FirefoxDriver();
 		} else {
-			System.out.println("Please Choose Correct BrowserName");
+//			System.out.println("Please Choose Correct BrowserName");
+			throw new NoBrowserFoundException("Please choose Correct browserName");
 		}
 
 		driver.manage().window().maximize();
