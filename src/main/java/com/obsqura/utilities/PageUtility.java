@@ -46,4 +46,13 @@ public class PageUtility {
 	}
 	
 	
+	public void AcceptAlert() {
+		driver.switchTo().alert().accept();
+	}
+	
+	
+	public String GetElementText(WebElement element) {
+		return element.getText();
+		
+	}
 }

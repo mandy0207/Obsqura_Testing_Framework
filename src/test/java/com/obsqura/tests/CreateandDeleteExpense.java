@@ -2,6 +2,7 @@ package com.obsqura.tests;
 
 import org.testng.annotations.Test;
 
+import com.obsqura.pages.ExpenseCategoryPage;
 import com.obsqura.pages.HomePage;
 import com.obsqura.pages.LoginPage;
 import com.obsqura.utilities.DateUtility;
@@ -16,9 +17,11 @@ public class CreateandDeleteExpense  extends BaseTest{
 		
 		HomePage hp = new HomePage(driver);
 		hp.NavigateToManageExpense();
-		//System.out.println(DateUtility.GetCurrentDate());
 		
-		
-		
+		ExpenseCategoryPage ecp = new ExpenseCategoryPage(driver);
+		String date=DateUtility.GetCurrentDate();
+		ecp.CreateUniqueTitle(date);
+		ecp.DeleteExpenseCategory(date);
+			
 	}
 }

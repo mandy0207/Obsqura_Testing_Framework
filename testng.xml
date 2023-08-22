@@ -16,4 +16,11 @@
   </test> 
   
   
+    <test name="Test3">
+    <classes>
+
+      <class name="com.obsqura.tests.CreateandDeleteExpense"/>
+    </classes>
+  </test> 
+  
 </suite>
