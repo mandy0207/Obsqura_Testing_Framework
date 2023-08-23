@@ -10,9 +10,12 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeSuite;
 
 import com.obsqura.Exception.NoBrowserFoundException;
+import com.obsqura.pages.ExpenseCategoryPage;
+import com.obsqura.pages.HomePage;
+import com.obsqura.pages.LoginPage;
+import com.obsqura.pages.ProductsPage;
 import com.obsqura.utilities.TestProperties;
 
 public class BaseTest {
@@ -20,7 +23,8 @@ public class BaseTest {
 	Properties prop;
 
 	@BeforeClass
-	public void InitializeDriver()  {
+	public void InitializeDriver() throws IOException  {
+		prop = TestProperties.GetProperties(); 
 		String browserName=prop.getProperty("browser");
 		String Environment = prop.getProperty("Environment");
 		String Url = prop.getProperty(Environment);
@@ -39,21 +43,30 @@ public class BaseTest {
 			throw new NoBrowserFoundException("Please choose Correct browserName");
 		}
 
+		InitializePages();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.get(Url);
 
 	}
-	@BeforeSuite
-	public void ReadProperties() throws IOException
-	{
-		prop = TestProperties.GetProperties();  
+	
+	public LoginPage lp;
+	public HomePage hp ;
+	public ProductsPage pp;
+	public  ExpenseCategoryPage ecp;
+	/**
+	 * Intialize Globally
+	 */
+	public void InitializePages() {
+		 lp = new LoginPage(driver);
+		 hp = new HomePage(driver);
+		 pp = new ProductsPage(driver);
+	    ecp = new ExpenseCategoryPage(driver);
 	}
 	
-	
-	@AfterClass
-	public void TearDown() {
-
-		driver.quit();
-	}
+//	@AfterClass
+//	public void TearDown() {
+//
+//		driver.quit();
+//	}
 }

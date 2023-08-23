@@ -13,15 +13,11 @@ public class SearchProductTest extends BaseTest {
 	@Test
 	public void MySearchProductTest() {
 		
-		LoginPage lp = new LoginPage(driver);
+		
+		
 		lp.Login();
-		
-		HomePage hp = new HomePage(driver);
 		hp.NavigateToManageProduct();
-		
-		ProductsPage pp = new ProductsPage(driver);
 		pp.ClickSearchBtn();
-		
 		pp.ValidateSearchProduct("Maggi");
 		
 		

@@ -3,24 +3,22 @@
 <suite name="Suite">
   <test name="Test1">
     <classes>
-      <class name="com.obsqura.tests.LoginTest"/>
    
+      <class name="com.obsqura.tests.LoginTest"/>
+      
     </classes>
   </test> 
   
   <test name="Test2">
     <classes>
-
       <class name="com.obsqura.tests.SearchProductTest"/>
     </classes>
   </test> 
   
-  
     <test name="Test3">
     <classes>
-
       <class name="com.obsqura.tests.CreateandDeleteExpense"/>
     </classes>
   </test> 
   
-</suite>
+</suite> <!-- Suite -->

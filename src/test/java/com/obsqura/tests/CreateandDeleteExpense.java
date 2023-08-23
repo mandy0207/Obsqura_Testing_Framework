@@ -12,13 +12,9 @@ public class CreateandDeleteExpense  extends BaseTest{
 	@Test
 	public void MyCreateDeleteExpense() {
 		
-		LoginPage lp = new LoginPage(driver);
 		lp.Login();
-		
-		HomePage hp = new HomePage(driver);
 		hp.NavigateToManageExpense();
-		
-		ExpenseCategoryPage ecp = new ExpenseCategoryPage(driver);
+	
 		String date=DateUtility.GetCurrentDate();
 		ecp.CreateUniqueTitle(date);
 		ecp.ValidateUniqueNameIsCreated();
