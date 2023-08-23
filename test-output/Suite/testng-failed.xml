@@ -5,9 +5,7 @@
     <classes>
       <class name="com.obsqura.tests.LoginTest">
         <methods>
-          <include name="TearDown"/>
           <include name="MyLoginTest"/>
-          <include name="ReadProperties"/>
           <include name="InitializeDriver"/>
         </methods>
       </class> <!-- com.obsqura.tests.LoginTest -->
@@ -17,12 +15,30 @@
     <classes>
       <class name="com.obsqura.tests.SearchProductTest">
         <methods>
-          <include name="TearDown"/>
           <include name="MySearchProductTest"/>
-          <include name="ReadProperties"/>
           <include name="InitializeDriver"/>
         </methods>
       </class> <!-- com.obsqura.tests.SearchProductTest -->
     </classes>
   </test> <!-- Test2(failed) -->
+  <test thread-count="5" name="Test3(failed)">
+    <classes>
+      <class name="com.obsqura.tests.CreateandDeleteExpense">
+        <methods>
+          <include name="InitializeDriver"/>
+          <include name="MyCreateDeleteExpense"/>
+        </methods>
+      </class> <!-- com.obsqura.tests.CreateandDeleteExpense -->
+    </classes>
+  </test> <!-- Test3(failed) -->
+  <test thread-count="5" name="Test4(failed)">
+    <classes>
+      <class name="com.obsqura.tests.CreateDeliveryBoy">
+        <methods>
+          <include name="CreateDeliveryBoyTest"/>
+          <include name="InitializeDriver"/>
+        </methods>
+      </class> <!-- com.obsqura.tests.CreateDeliveryBoy -->
+    </classes>
+  </test> <!-- Test4(failed) -->
 </suite> <!-- Failed suite [Suite] -->
