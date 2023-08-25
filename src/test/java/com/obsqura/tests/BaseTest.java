@@ -1,9 +1,13 @@
 package com.obsqura.tests;
 
+import java.io.File;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
 
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -19,8 +23,12 @@ import com.obsqura.pages.LoginPage;
 import com.obsqura.pages.ProductsPage;
 import com.obsqura.utilities.TestProperties;
 
+
+
+
+
 public class BaseTest {
-	WebDriver driver;
+	 protected WebDriver driver;
 	Properties prop;
 
 	@BeforeClass
@@ -43,13 +51,16 @@ public class BaseTest {
 //			System.out.println("Please Choose Correct BrowserName");
 			throw new NoBrowserFoundException("Please choose Correct browserName");
 		}
-
+	
+	
 		InitializePages();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.get(Url);
 
 	}
+	
+
 	
 	public LoginPage lp;
 	public HomePage hp ;
@@ -68,6 +79,7 @@ public class BaseTest {
 	}
 	
 
+	
 	
 	@AfterClass
 	public void TearDown() {

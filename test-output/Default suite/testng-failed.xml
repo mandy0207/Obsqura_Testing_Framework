@@ -5,6 +5,7 @@
     <classes>
       <class name="com.obsqura.tests.CreateDeliveryBoy">
         <methods>
+          <include name="TearDown"/>
           <include name="CreateDeliveryBoyTest"/>
           <include name="InitializeDriver"/>
         </methods>
