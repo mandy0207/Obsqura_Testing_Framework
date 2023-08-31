@@ -1,5 +1,6 @@
 package com.obsqura.tests;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.obsqura.pages.LoginPage;
@@ -16,7 +17,7 @@ public class CreateDeliveryBoy extends BaseTest{
 		ldp.CreateDeliveryBoy(date);
 		
 		ldp.ValidateDeliveryBoyIsCreated();
-		
+	
 		
 	}
 

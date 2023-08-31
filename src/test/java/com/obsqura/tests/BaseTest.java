@@ -14,6 +14,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 
 import com.obsqura.Exception.NoBrowserFoundException;
 import com.obsqura.pages.ExpenseCategoryPage;
@@ -24,17 +25,15 @@ import com.obsqura.pages.ProductsPage;
 import com.obsqura.utilities.TestProperties;
 
 
-
-
-
 public class BaseTest {
 	 protected WebDriver driver;
 	Properties prop;
 
+	@Parameters({"browserName"})
 	@BeforeClass
-	public void InitializeDriver() throws IOException  {
+	public void InitializeDriver(String browserName) throws IOException  {
 		prop = TestProperties.GetProperties(); 
-		String browserName=prop.getProperty("browser");
+        //String browserName=prop.getProperty("browser");
 		String Environment = prop.getProperty("Environment");
 		String Url = prop.getProperty(Environment);
 			

@@ -1,4 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 25.166 s - in TestSuite
+Tests run: 4, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 15.677 s <<< FAILURE! - in TestSuite
+CreateDeliveryBoyTest(com.obsqura.tests.CreateDeliveryBoy)  Time elapsed: 5.321 s  <<< FAILURE!
+java.lang.AssertionError: null
+	at com.obsqura.tests.CreateDeliveryBoy.CreateDeliveryBoyTest(CreateDeliveryBoy.java:20)
+
+MyCreateDeleteExpense(com.obsqura.tests.CreateandDeleteExpense)  Time elapsed: 6.365 s  <<< FAILURE!
+java.lang.AssertionError: null
+	at com.obsqura.tests.CreateandDeleteExpense.MyCreateDeleteExpense(CreateandDeleteExpense.java:20)
+

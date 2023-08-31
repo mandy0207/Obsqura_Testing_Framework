@@ -1,6 +1,7 @@
 package com.obsqura.tests;
 
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.obsqura.pages.HomePage;
