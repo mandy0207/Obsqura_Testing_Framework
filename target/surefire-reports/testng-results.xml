@@ -1,127 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="2" failed="2" skipped="0">
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-31T11:48:53 EDT" name="Suite" finished-at="2023-08-31T11:49:08 EDT" duration-ms="14752">
+  <suite started-at="2023-09-01T11:58:19 EDT" name="Suite" finished-at="2023-09-01T11:58:40 EDT" duration-ms="21189">
     <groups>
     </groups>
-    <test started-at="2023-08-31T11:48:53 EDT" name="Test1" finished-at="2023-08-31T11:49:02 EDT" duration-ms="9549">
+    <test started-at="2023-09-01T11:58:19 EDT" name="Test1" finished-at="2023-09-01T11:58:36 EDT" duration-ms="16463">
       <class name="com.obsqura.tests.LoginTest">
-        <test-method is-config="true" signature="InitializeDriver(java.lang.String)[pri:0, instance:com.obsqura.tests.LoginTest@1349883]" started-at="2023-08-31T11:48:53 EDT" name="InitializeDriver" finished-at="2023-08-31T11:48:59 EDT" duration-ms="6538" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="InitializeDriver()[pri:0, instance:com.obsqura.tests.LoginTest@117159c0]" started-at="2023-09-01T11:58:19 EDT" name="InitializeDriver" finished-at="2023-09-01T11:58:30 EDT" duration-ms="10986" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InitializeDriver -->
-        <test-method signature="MyLoginTest()[pri:0, instance:com.obsqura.tests.LoginTest@1349883]" started-at="2023-08-31T11:48:59 EDT" name="MyLoginTest" finished-at="2023-08-31T11:49:02 EDT" duration-ms="2094" status="PASS">
+        <test-method signature="MyLoginTest()[pri:0, instance:com.obsqura.tests.LoginTest@117159c0]" started-at="2023-09-01T11:58:30 EDT" name="MyLoginTest" finished-at="2023-09-01T11:58:33 EDT" duration-ms="3008" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MyLoginTest -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.obsqura.tests.LoginTest@1349883]" started-at="2023-08-31T11:49:02 EDT" name="TearDown" finished-at="2023-08-31T11:49:02 EDT" duration-ms="854" status="PASS">
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.obsqura.tests.LoginTest@117159c0]" started-at="2023-09-01T11:58:33 EDT" name="TearDown" finished-at="2023-09-01T11:58:36 EDT" duration-ms="2336" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
       </class> <!-- com.obsqura.tests.LoginTest -->
     </test> <!-- Test1 -->
-    <test started-at="2023-08-31T11:48:53 EDT" name="Test2" finished-at="2023-08-31T11:49:06 EDT" duration-ms="12767">
+    <test started-at="2023-09-01T11:58:19 EDT" name="Test2" finished-at="2023-09-01T11:58:39 EDT" duration-ms="19637">
       <class name="com.obsqura.tests.SearchProductTest">
-        <test-method is-config="true" signature="InitializeDriver(java.lang.String)[pri:0, instance:com.obsqura.tests.SearchProductTest@221a3fa4]" started-at="2023-08-31T11:48:53 EDT" name="InitializeDriver" finished-at="2023-08-31T11:49:01 EDT" duration-ms="8040" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Edge]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="InitializeDriver()[pri:0, instance:com.obsqura.tests.SearchProductTest@4d1c005e]" started-at="2023-09-01T11:58:19 EDT" name="InitializeDriver" finished-at="2023-09-01T11:58:30 EDT" duration-ms="11195" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InitializeDriver -->
-        <test-method signature="MySearchProductTest()[pri:0, instance:com.obsqura.tests.SearchProductTest@221a3fa4]" started-at="2023-08-31T11:49:01 EDT" name="MySearchProductTest" finished-at="2023-08-31T11:49:05 EDT" duration-ms="4155" status="PASS">
+        <test-method signature="MySearchProductTest()[pri:0, instance:com.obsqura.tests.SearchProductTest@4d1c005e]" started-at="2023-09-01T11:58:30 EDT" name="MySearchProductTest" finished-at="2023-09-01T11:58:37 EDT" duration-ms="7035" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MySearchProductTest -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.obsqura.tests.SearchProductTest@221a3fa4]" started-at="2023-08-31T11:49:05 EDT" name="TearDown" finished-at="2023-08-31T11:49:06 EDT" duration-ms="528" status="PASS">
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.obsqura.tests.SearchProductTest@4d1c005e]" started-at="2023-09-01T11:58:37 EDT" name="TearDown" finished-at="2023-09-01T11:58:39 EDT" duration-ms="1300" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
       </class> <!-- com.obsqura.tests.SearchProductTest -->
     </test> <!-- Test2 -->
-    <test started-at="2023-08-31T11:48:53 EDT" name="Test4" finished-at="2023-08-31T11:49:07 EDT" duration-ms="13932">
+    <test started-at="2023-09-01T11:58:19 EDT" name="Test4" finished-at="2023-09-01T11:58:39 EDT" duration-ms="19723">
       <class name="com.obsqura.tests.CreateDeliveryBoy">
-        <test-method is-config="true" signature="InitializeDriver(java.lang.String)[pri:0, instance:com.obsqura.tests.CreateDeliveryBoy@6be968ce]" started-at="2023-08-31T11:48:53 EDT" name="InitializeDriver" finished-at="2023-08-31T11:48:59 EDT" duration-ms="6493" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Edge]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="InitializeDriver()[pri:0, instance:com.obsqura.tests.CreateDeliveryBoy@303cf2ba]" started-at="2023-09-01T11:58:19 EDT" name="InitializeDriver" finished-at="2023-09-01T11:58:30 EDT" duration-ms="10565" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InitializeDriver -->
-        <test-method signature="CreateDeliveryBoyTest()[pri:0, instance:com.obsqura.tests.CreateDeliveryBoy@6be968ce]" started-at="2023-08-31T11:48:59 EDT" name="CreateDeliveryBoyTest" finished-at="2023-08-31T11:49:06 EDT" duration-ms="6823" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: null
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.fail(Assert.java:115)
-at com.obsqura.tests.CreateDeliveryBoy.CreateDeliveryBoyTest(CreateDeliveryBoy.java:20)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="CreateDeliveryBoyTest()[pri:0, instance:com.obsqura.tests.CreateDeliveryBoy@303cf2ba]" started-at="2023-09-01T11:58:30 EDT" name="CreateDeliveryBoyTest" finished-at="2023-09-01T11:58:38 EDT" duration-ms="7999" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateDeliveryBoyTest -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.obsqura.tests.CreateDeliveryBoy@6be968ce]" started-at="2023-08-31T11:49:06 EDT" name="TearDown" finished-at="2023-08-31T11:49:07 EDT" duration-ms="527" status="PASS">
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.obsqura.tests.CreateDeliveryBoy@303cf2ba]" started-at="2023-09-01T11:58:38 EDT" name="TearDown" finished-at="2023-09-01T11:58:39 EDT" duration-ms="1053" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
       </class> <!-- com.obsqura.tests.CreateDeliveryBoy -->
     </test> <!-- Test4 -->
-    <test started-at="2023-08-31T11:48:53 EDT" name="Test3" finished-at="2023-08-31T11:49:08 EDT" duration-ms="14752">
+    <test started-at="2023-09-01T11:58:19 EDT" name="Test3" finished-at="2023-09-01T11:58:40 EDT" duration-ms="21189">
       <class name="com.obsqura.tests.CreateandDeleteExpense">
-        <test-method is-config="true" signature="InitializeDriver(java.lang.String)[pri:0, instance:com.obsqura.tests.CreateandDeleteExpense@24569dba]" started-at="2023-08-31T11:48:53 EDT" name="InitializeDriver" finished-at="2023-08-31T11:48:59 EDT" duration-ms="6516" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="InitializeDriver()[pri:0, instance:com.obsqura.tests.CreateandDeleteExpense@59402b8f]" started-at="2023-09-01T11:58:19 EDT" name="InitializeDriver" finished-at="2023-09-01T11:58:30 EDT" duration-ms="10698" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InitializeDriver -->
-        <test-method signature="MyCreateDeleteExpense()[pri:0, instance:com.obsqura.tests.CreateandDeleteExpense@24569dba]" started-at="2023-08-31T11:48:59 EDT" name="MyCreateDeleteExpense" finished-at="2023-08-31T11:49:07 EDT" duration-ms="7887" status="FAIL">
+        <test-method signature="MyCreateDeleteExpense()[pri:0, instance:com.obsqura.tests.CreateandDeleteExpense@59402b8f]" started-at="2023-09-01T11:58:30 EDT" name="MyCreateDeleteExpense" finished-at="2023-09-01T11:58:40 EDT" duration-ms="9753" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[null]]>
@@ -130,7 +68,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
               <![CDATA[java.lang.AssertionError: null
 at org.testng.Assert.fail(Assert.java:110)
 at org.testng.Assert.fail(Assert.java:115)
-at com.obsqura.tests.CreateandDeleteExpense.MyCreateDeleteExpense(CreateandDeleteExpense.java:20)
+at com.obsqura.tests.CreateandDeleteExpense.MyCreateDeleteExpense(CreateandDeleteExpense.java:22)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -159,7 +97,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MyCreateDeleteExpense -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.obsqura.tests.CreateandDeleteExpense@24569dba]" started-at="2023-08-31T11:49:07 EDT" name="TearDown" finished-at="2023-08-31T11:49:08 EDT" duration-ms="301" status="PASS">
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.obsqura.tests.CreateandDeleteExpense@59402b8f]" started-at="2023-09-01T11:58:40 EDT" name="TearDown" finished-at="2023-09-01T11:58:40 EDT" duration-ms="313" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->

@@ -15,6 +15,10 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.obsqura.constants.Constants;
+
+import context.WebdriverContext;
+
 public class PageUtility {
 
 	WebDriver driver;
@@ -72,6 +76,15 @@ public class PageUtility {
 		js.executeScript("window.scrollBy(0,3000);");
 	}
 	
+	
+	public static String GetScreenshot(String testCaseName) throws IOException {
+		TakesScreenshot scrshot = (TakesScreenshot)WebdriverContext.getDriver();
+	      File srcfile=scrshot.getScreenshotAs(OutputType.FILE);
+	      String path= Constants.projectPath+"\\Reports\\"+testCaseName+".png";
+	      File destfile = new File(path); 
+	      FileUtils.copyFile(srcfile, destfile);
+	      return path;
+	}
 
 
 }

@@ -12,11 +12,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 
 import com.obsqura.Exception.NoBrowserFoundException;
+import com.obsqura.constants.Constants;
 import com.obsqura.pages.ExpenseCategoryPage;
 import com.obsqura.pages.HomePage;
 import com.obsqura.pages.ListDeliveryBoyPage;
@@ -24,16 +25,18 @@ import com.obsqura.pages.LoginPage;
 import com.obsqura.pages.ProductsPage;
 import com.obsqura.utilities.TestProperties;
 
+import context.WebdriverContext;
+
 
 public class BaseTest {
 	 protected WebDriver driver;
 	Properties prop;
 
 	@Parameters({"browserName"})
-	@BeforeClass
-	public void InitializeDriver(String browserName) throws IOException  {
+	@BeforeMethod
+	public void InitializeDriver() throws IOException  {
 		prop = TestProperties.GetProperties(); 
-        //String browserName=prop.getProperty("browser");
+        String browserName=prop.getProperty("browser");
 		String Environment = prop.getProperty("Environment");
 		String Url = prop.getProperty(Environment);
 			
@@ -52,6 +55,7 @@ public class BaseTest {
 		}
 	
 	
+		WebdriverContext.setDriver(driver);
 		InitializePages();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
@@ -77,10 +81,12 @@ public class BaseTest {
 	    ldp=new ListDeliveryBoyPage(driver);
 	}
 	
+	
 
 	
 	
-	@AfterClass
+	
+	@AfterMethod
 	public void TearDown() {
 
 		driver.quit();

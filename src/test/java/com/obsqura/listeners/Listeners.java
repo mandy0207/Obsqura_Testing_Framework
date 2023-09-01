@@ -1,5 +1,7 @@
 package com.obsqura.listeners;
 
+import java.io.IOException;
+
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -7,9 +9,11 @@ import org.testng.ITestResult;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
+import com.obsqura.tests.BaseTest;
 import com.obsqura.utilities.ExtentReportNG;
+import com.obsqura.utilities.PageUtility;
 
-public class Listeners implements ITestListener {
+public class Listeners   implements ITestListener {
 
 	ExtentReports extent =ExtentReportNG.GetReporterObject();
 	ExtentTest test;
@@ -27,7 +31,12 @@ public class Listeners implements ITestListener {
 	@Override
 	public void onTestFailure(ITestResult result) {
 		test.fail(result.getThrowable());
-
+		String testCaseName = result.getMethod().getMethodName();
+		try {
+			test.addScreenCaptureFromPath(PageUtility.GetScreenshot(testCaseName), testCaseName );
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 
 	@Override
