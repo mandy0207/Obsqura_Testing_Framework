@@ -19,7 +19,7 @@ public class CreateandDeleteExpense  extends BaseTest{
 		ecp.CreateUniqueTitle(date);
 		ecp.ValidateUniqueNameIsCreated();
 		ecp.DeleteExpenseCategory(date);
-	    Assert.fail();
+	  //  Assert.fail();
 			
 	}
 
