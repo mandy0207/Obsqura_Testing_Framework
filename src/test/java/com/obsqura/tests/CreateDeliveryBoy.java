@@ -1,9 +1,7 @@
 package com.obsqura.tests;
 
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import com.obsqura.pages.LoginPage;
 import com.obsqura.utilities.DateUtility;
 
 public class CreateDeliveryBoy extends BaseTest{

@@ -1,12 +1,5 @@
 package com.obsqura.tests;
-
-
-import org.testng.Assert;
 import org.testng.annotations.Test;
-
-import com.obsqura.pages.HomePage;
-import com.obsqura.pages.LoginPage;
-import com.obsqura.pages.ProductsPage;
 
 public class SearchProductTest extends BaseTest {
 
