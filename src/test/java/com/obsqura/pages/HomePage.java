@@ -31,7 +31,12 @@ public class HomePage extends PageUtility {
 	@FindBy(xpath = "//*[contains(text(),'Manage Delivery Boy')]")
 	private WebElement manageDeliveryBoy;
 	
+	@FindBy(xpath = "//p[normalize-space()='Manage Content']")
+	private WebElement manageContent;
 	
+	@FindBy(xpath = "//p[normalize-space()='Manage Contact']")
+	private WebElement manageContact;
+
 	public void NavigateToManageProduct() {
 		ClickElement(manageProduct);
 	}
@@ -40,6 +45,10 @@ public class HomePage extends PageUtility {
 		ClickElement(manageDeliveryBoy);
 	}
 	
+	public void navigateToManageContact() {
+		ClickElement(manageContent);
+		ClickElement(manageContact);
+	}
 	public void NavigateToManageExpense() {
 		ClickElement(manageExpenseDropdown);
 		ClickElement(manageExpense);

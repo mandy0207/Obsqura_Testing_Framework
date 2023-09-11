@@ -40,6 +40,7 @@ public class PageUtility {
 	
 	
 	public void SetTextBox(WebElement element, String value) {
+		element.clear();
 		element.sendKeys(value);
 	}
 	

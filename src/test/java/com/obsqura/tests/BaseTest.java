@@ -13,6 +13,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 
 import com.obsqura.Exception.NoBrowserFoundException;
+import com.obsqura.pages.ContactUsPage;
 import com.obsqura.pages.ExpenseCategoryPage;
 import com.obsqura.pages.HomePage;
 import com.obsqura.pages.ListDeliveryBoyPage;
@@ -65,6 +66,7 @@ public class BaseTest {
 	public ProductsPage pp;
 	public  ExpenseCategoryPage ecp;
 	public ListDeliveryBoyPage ldp;
+	public ContactUsPage cp;
 	/**
 	 * Intialize Globally
 	 */
@@ -74,6 +76,7 @@ public class BaseTest {
 		 pp = new ProductsPage(driver);
 	    ecp = new ExpenseCategoryPage(driver);
 	    ldp=new ListDeliveryBoyPage(driver);
+	    cp = new ContactUsPage(driver);
 	}
 	
 	
