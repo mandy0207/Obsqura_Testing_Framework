@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-10T20:58:46 EDT" name="Default suite" finished-at="2023-09-10T20:58:59 EDT" duration-ms="13255">
+  <suite started-at="2023-09-13T11:18:16 EDT" name="Default suite" finished-at="2023-09-13T11:18:26 EDT" duration-ms="10694">
     <groups>
     </groups>
-    <test started-at="2023-09-10T20:58:46 EDT" name="Default test" finished-at="2023-09-10T20:58:59 EDT" duration-ms="13255">
-      <class name="com.obsqura.tests.CreateContact">
-        <test-method is-config="true" signature="InitializeDriver()[pri:0, instance:com.obsqura.tests.CreateContact@18078bef]" started-at="2023-09-10T20:58:46 EDT" name="InitializeDriver" finished-at="2023-09-10T20:58:51 EDT" duration-ms="5002" status="PASS">
+    <test started-at="2023-09-13T11:18:16 EDT" name="Default test" finished-at="2023-09-13T11:18:26 EDT" duration-ms="10694">
+      <class name="com.obsqura.tests.CreateDeliveryBoy">
+        <test-method is-config="true" signature="InitializeDriver()[pri:0, instance:com.obsqura.tests.CreateDeliveryBoy@18078bef]" started-at="2023-09-13T11:18:16 EDT" name="InitializeDriver" finished-at="2023-09-13T11:18:22 EDT" duration-ms="6097" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InitializeDriver -->
-        <test-method signature="CreateContactTest()[pri:0, instance:com.obsqura.tests.CreateContact@18078bef]" started-at="2023-09-10T20:58:51 EDT" name="CreateContactTest" finished-at="2023-09-10T20:58:59 EDT" duration-ms="8019" status="PASS">
+        <test-method signature="CreateDeliveryBoyTest()[pri:0, instance:com.obsqura.tests.CreateDeliveryBoy@18078bef]" started-at="2023-09-13T11:18:22 EDT" name="CreateDeliveryBoyTest" finished-at="2023-09-13T11:18:26 EDT" duration-ms="4493" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CreateContactTest -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.obsqura.tests.CreateContact@18078bef]" started-at="2023-09-10T20:58:59 EDT" name="TearDown" finished-at="2023-09-10T20:58:59 EDT" duration-ms="198" status="PASS">
+        </test-method> <!-- CreateDeliveryBoyTest -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.obsqura.tests.CreateDeliveryBoy@18078bef]" started-at="2023-09-13T11:18:26 EDT" name="TearDown" finished-at="2023-09-13T11:18:26 EDT" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
-      </class> <!-- com.obsqura.tests.CreateContact -->
+      </class> <!-- com.obsqura.tests.CreateDeliveryBoy -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

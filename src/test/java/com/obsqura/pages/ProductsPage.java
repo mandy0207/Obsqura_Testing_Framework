@@ -37,19 +37,11 @@ public class ProductsPage extends PageUtility {
 	}
 	
 
-	public void ValidateSearchProduct(String productName) {
+	public String ValidateSearchProduct(String productName) {
 		title_input.sendKeys(productName);
 		searchProductBtn.click();
 		String text=productTitle.getText();
 		System.out.println(text);
-		
-		if(text.contains(productName)) {
-			Assert.assertTrue(true);
-		}
-		else {
-			Assert.assertTrue(false);
-		}
-	
-		
+		return text;		
 	}
 }

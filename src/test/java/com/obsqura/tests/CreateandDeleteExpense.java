@@ -2,6 +2,7 @@ package com.obsqura.tests;
 
 import java.io.IOException;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.obsqura.utilities.DateUtility;
@@ -19,9 +20,18 @@ public class CreateandDeleteExpense  extends BaseTest{
 		String date=DateUtility.GetCurrentDate();
 		ecp.CreateUniqueTitle(date);
 		ecp.ValidateUniqueNameIsCreated();
-		ecp.DeleteExpenseCategory(date);
+		String text = ecp.DeleteExpenseCategory(date);
 	    
+		/**
+		 * Validation
+		 */
 			
+		if(text.contains("Expense Category Deleted Successfully")) {
+			Assert.assertTrue(true);
+		}
+		else {
+		Assert.assertEquals(text, "Expense Category Deleted Successfully");
+		}
 	}
 
 }

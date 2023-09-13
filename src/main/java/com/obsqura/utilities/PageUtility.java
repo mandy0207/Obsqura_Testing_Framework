@@ -70,6 +70,7 @@ public class PageUtility {
 	
 	public void WaitUntilClickable(WebElement element) {
 		wait.until(ExpectedConditions.elementToBeClickable(element));
+	
 	}
 	
 	public void ScrollUp() {

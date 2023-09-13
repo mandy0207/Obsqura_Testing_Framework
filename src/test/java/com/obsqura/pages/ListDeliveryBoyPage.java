@@ -42,7 +42,7 @@ public class ListDeliveryBoyPage extends PageUtility {
 		SetTextBox(password, "12345");
 		ScrollUp();
 		WaitUntilClickable(saveBtn);
-		//ClickElement(saveBtn);
+		ClickElement(saveBtn);
 		
 		
 	}

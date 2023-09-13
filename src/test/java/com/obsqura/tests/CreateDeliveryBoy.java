@@ -15,7 +15,8 @@ public class CreateDeliveryBoy extends BaseTest{
 		ldp.CreateDeliveryBoy(date);
 		
 		ldp.ValidateDeliveryBoyIsCreated();
-	
+
+
 		
 	}
 

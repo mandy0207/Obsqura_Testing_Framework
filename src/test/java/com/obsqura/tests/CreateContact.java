@@ -17,7 +17,7 @@ public class CreateContact extends BaseTest {
 		hp.navigateToManageContact();
 		List<Person> personList = ReadExcelUtility.ReadDataFromExcel();
 		
-		for(Person person :personList) {
+		    for(Person person :personList) {
 			cp.EnterDataIntoForm(person);
 			
 			String alertText = cp.GetContaactUpdateAlertText();

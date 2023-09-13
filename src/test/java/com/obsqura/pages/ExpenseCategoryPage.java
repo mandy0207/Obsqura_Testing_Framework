@@ -61,7 +61,7 @@ public class ExpenseCategoryPage extends PageUtility{
 		
 	}
 	
-	public void DeleteExpenseCategory(String Name) {
+	public String DeleteExpenseCategory(String Name) {
 		String  uniqueName= "Obsqura"+ Name;
 		ClickElement(searchBtn1);
 		SetTextBox(serachTitle, uniqueName);
@@ -69,12 +69,7 @@ public class ExpenseCategoryPage extends PageUtility{
 		ClickElement(deleteBtn);
 		AcceptAlert();
 		String text = GetElementText(deleteAlertText);
-		if(text.contains("Expense Category Deleted Successfully")) {
-			Assert.assertTrue(true);
-		}
-		else {
-		Assert.assertEquals(text, "Expense Category Deleted Successfully");
-		}
+		return text;
 		
 	}
 }
