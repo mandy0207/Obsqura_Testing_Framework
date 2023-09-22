@@ -36,6 +36,7 @@ public class HomePage extends PageUtility {
 	
 	@FindBy(xpath = "//p[normalize-space()='Manage Contact']")
 	private WebElement manageContact;
+	
 
 	public void NavigateToManageProduct() {
 		ClickElement(manageProduct);
@@ -53,4 +54,7 @@ public class HomePage extends PageUtility {
 		ClickElement(manageExpenseDropdown);
 		ClickElement(manageExpense);
 	}
+	
+	
+	
 }

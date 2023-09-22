@@ -46,7 +46,7 @@ public class PageUtility {
 	
 	public void SelectFromStaticDropdown(WebElement dropdown, String value) {
 		 Select staticDropdown = new Select(dropdown);
-	     staticDropdown.selectByValue(value);
+	     staticDropdown.selectByVisibleText(value);
 		
 	}
 	/**
@@ -54,7 +54,7 @@ public class PageUtility {
 	 * @param element
 	 */
 	public void WaitUntilVisible(WebElement element) {
-	
+		wait.until(ExpectedConditions.elementToBeClickable(element));
 	}
 	
 	

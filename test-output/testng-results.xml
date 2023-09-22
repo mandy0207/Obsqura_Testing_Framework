@@ -1,25 +1,405 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="12" passed="11" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-13T11:18:16 EDT" name="Default suite" finished-at="2023-09-13T11:18:26 EDT" duration-ms="10694">
+  <suite started-at="2023-09-19T21:28:44 IST" name="Suite" finished-at="2023-09-19T21:29:39 IST" duration-ms="54729">
     <groups>
     </groups>
-    <test started-at="2023-09-13T11:18:16 EDT" name="Default test" finished-at="2023-09-13T11:18:26 EDT" duration-ms="10694">
-      <class name="com.obsqura.tests.CreateDeliveryBoy">
-        <test-method is-config="true" signature="InitializeDriver()[pri:0, instance:com.obsqura.tests.CreateDeliveryBoy@18078bef]" started-at="2023-09-13T11:18:16 EDT" name="InitializeDriver" finished-at="2023-09-13T11:18:22 EDT" duration-ms="6097" status="PASS">
+    <test started-at="2023-09-19T21:28:44 IST" name="Test2" finished-at="2023-09-19T21:28:53 IST" duration-ms="8829">
+      <class name="com.obsqura.tests.SearchProductTest">
+        <test-method is-config="true" signature="InitializeDriver(java.lang.String)[pri:0, instance:com.obsqura.tests.SearchProductTest@22f59fa]" started-at="2023-09-19T21:28:44 IST" name="InitializeDriver" finished-at="2023-09-19T21:28:53 IST" duration-ms="8589" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.remote.NoSuchDriverException">
+            <message>
+              <![CDATA[Unable to obtain: Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [--remote-allow-origins=*], extensions: []}}, error Command failed with code: 65, executed: [C:\Users\jenom\AppData\Local\Temp\selenium-manager1848640188430007633007043177693164\selenium-manager.exe, --browser, MicrosoftEdge, --output, json]
+The process cannot access the file because it is being used by another process. (os error 32)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: driver.version: EdgeDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [--remote-allow-origins=*], extensions: []}}, error Command failed with code: 65, executed: [C:\Users\jenom\AppData\Local\Temp\selenium-manager1848640188430007633007043177693164\selenium-manager.exe, --browser, MicrosoftEdge, --output, json]
+The process cannot access the file because it is being used by another process. (os error 32)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: driver.version: EdgeDriver
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:25)
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:13)
+at org.openqa.selenium.edge.EdgeDriver.generateExecutor(EdgeDriver.java:71)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:60)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:56)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:48)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:44)
+at com.obsqura.tests.BaseTest.InitializeDriver(BaseTest.java:49)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [C:\Users\jenom\AppData\Local\Temp\selenium-manager1848640188430007633007043177693164\selenium-manager.exe, --browser, MicrosoftEdge, --output, json]
+The process cannot access the file because it is being used by another process. (os error 32)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: driver.version: EdgeDriver
+at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:151)
+at org.openqa.selenium.manager.SeleniumManager.getDriverPath(SeleniumManager.java:273)
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:22)
+... 33 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.NoSuchDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InitializeDriver -->
-        <test-method signature="CreateDeliveryBoyTest()[pri:0, instance:com.obsqura.tests.CreateDeliveryBoy@18078bef]" started-at="2023-09-13T11:18:22 EDT" name="CreateDeliveryBoyTest" finished-at="2023-09-13T11:18:26 EDT" duration-ms="4493" status="PASS">
+        <test-method signature="MySearchProductTest()[pri:0, instance:com.obsqura.tests.SearchProductTest@22f59fa]" started-at="2023-09-19T21:28:53 IST" name="MySearchProductTest" finished-at="2023-09-19T21:28:53 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.remote.NoSuchDriverException">
+            <message>
+              <![CDATA[Unable to obtain: Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [--remote-allow-origins=*], extensions: []}}, error Command failed with code: 65, executed: [C:\Users\jenom\AppData\Local\Temp\selenium-manager1848640188430007633007043177693164\selenium-manager.exe, --browser, MicrosoftEdge, --output, json]
+The process cannot access the file because it is being used by another process. (os error 32)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: driver.version: EdgeDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [--remote-allow-origins=*], extensions: []}}, error Command failed with code: 65, executed: [C:\Users\jenom\AppData\Local\Temp\selenium-manager1848640188430007633007043177693164\selenium-manager.exe, --browser, MicrosoftEdge, --output, json]
+The process cannot access the file because it is being used by another process. (os error 32)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: driver.version: EdgeDriver
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:25)
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:13)
+at org.openqa.selenium.edge.EdgeDriver.generateExecutor(EdgeDriver.java:71)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:60)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:56)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:48)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:44)
+at com.obsqura.tests.BaseTest.InitializeDriver(BaseTest.java:49)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [C:\Users\jenom\AppData\Local\Temp\selenium-manager1848640188430007633007043177693164\selenium-manager.exe, --browser, MicrosoftEdge, --output, json]
+The process cannot access the file because it is being used by another process. (os error 32)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: driver.version: EdgeDriver
+at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:151)
+at org.openqa.selenium.manager.SeleniumManager.getDriverPath(SeleniumManager.java:273)
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:22)
+... 33 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.NoSuchDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MySearchProductTest -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.obsqura.tests.SearchProductTest@22f59fa]" started-at="2023-09-19T21:28:53 IST" name="TearDown" finished-at="2023-09-19T21:28:53 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- com.obsqura.tests.SearchProductTest -->
+    </test> <!-- Test2 -->
+    <test started-at="2023-09-19T21:28:44 IST" name="Test1" finished-at="2023-09-19T21:28:59 IST" duration-ms="15195">
+      <class name="com.obsqura.tests.LoginTest">
+        <test-method is-config="true" signature="InitializeDriver(java.lang.String)[pri:0, instance:com.obsqura.tests.LoginTest@2f953efd]" started-at="2023-09-19T21:28:44 IST" name="InitializeDriver" finished-at="2023-09-19T21:28:55 IST" duration-ms="10726" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitializeDriver -->
+        <test-method signature="MyLoginTest()[pri:0, instance:com.obsqura.tests.LoginTest@2f953efd]" started-at="2023-09-19T21:28:55 IST" name="MyLoginTest" finished-at="2023-09-19T21:28:59 IST" duration-ms="3783" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MyLoginTest -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.obsqura.tests.LoginTest@2f953efd]" started-at="2023-09-19T21:28:59 IST" name="TearDown" finished-at="2023-09-19T21:28:59 IST" duration-ms="554" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- com.obsqura.tests.LoginTest -->
+    </test> <!-- Test1 -->
+    <test started-at="2023-09-19T21:28:44 IST" name="Test4" finished-at="2023-09-19T21:29:05 IST" duration-ms="20341">
+      <class name="com.obsqura.tests.CreateDeliveryBoy">
+        <test-method is-config="true" signature="InitializeDriver(java.lang.String)[pri:0, instance:com.obsqura.tests.CreateDeliveryBoy@38af9828]" started-at="2023-09-19T21:28:44 IST" name="InitializeDriver" finished-at="2023-09-19T21:28:56 IST" duration-ms="11178" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitializeDriver -->
+        <test-method signature="CreateDeliveryBoyTest()[pri:0, instance:com.obsqura.tests.CreateDeliveryBoy@38af9828]" started-at="2023-09-19T21:28:56 IST" name="CreateDeliveryBoyTest" finished-at="2023-09-19T21:29:02 IST" duration-ms="6708" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateDeliveryBoyTest -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.obsqura.tests.CreateDeliveryBoy@18078bef]" started-at="2023-09-13T11:18:26 EDT" name="TearDown" finished-at="2023-09-13T11:18:26 EDT" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.obsqura.tests.CreateDeliveryBoy@38af9828]" started-at="2023-09-19T21:29:02 IST" name="TearDown" finished-at="2023-09-19T21:29:05 IST" duration-ms="2355" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
       </class> <!-- com.obsqura.tests.CreateDeliveryBoy -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test4 -->
+    <test started-at="2023-09-19T21:28:44 IST" name="Test3" finished-at="2023-09-19T21:29:07 IST" duration-ms="22441">
+      <class name="com.obsqura.tests.CreateandDeleteExpense">
+        <test-method is-config="true" signature="InitializeDriver(java.lang.String)[pri:0, instance:com.obsqura.tests.CreateandDeleteExpense@4e0ae11f]" started-at="2023-09-19T21:28:44 IST" name="InitializeDriver" finished-at="2023-09-19T21:28:55 IST" duration-ms="11022" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitializeDriver -->
+        <test-method signature="MyCreateDeleteExpense()[pri:0, instance:com.obsqura.tests.CreateandDeleteExpense@4e0ae11f]" started-at="2023-09-19T21:28:55 IST" name="MyCreateDeleteExpense" finished-at="2023-09-19T21:29:06 IST" duration-ms="10589" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MyCreateDeleteExpense -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.obsqura.tests.CreateandDeleteExpense@4e0ae11f]" started-at="2023-09-19T21:29:06 IST" name="TearDown" finished-at="2023-09-19T21:29:07 IST" duration-ms="715" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- com.obsqura.tests.CreateandDeleteExpense -->
+    </test> <!-- Test3 -->
+    <test started-at="2023-09-19T21:29:00 IST" name="Test6" finished-at="2023-09-19T21:29:10 IST" duration-ms="10707">
+      <class name="com.obsqura.tests.NewProductAddTest">
+        <test-method is-config="true" signature="InitializeDriver(java.lang.String)[pri:0, instance:com.obsqura.tests.NewProductAddTest@4bff7da0]" started-at="2023-09-19T21:29:00 IST" name="InitializeDriver" finished-at="2023-09-19T21:29:06 IST" duration-ms="6669" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitializeDriver -->
+        <test-method signature="MyNewProductAdd()[pri:0, instance:com.obsqura.tests.NewProductAddTest@4bff7da0]" started-at="2023-09-19T21:29:06 IST" name="MyNewProductAdd" finished-at="2023-09-19T21:29:10 IST" duration-ms="3399" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MyNewProductAdd -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.obsqura.tests.NewProductAddTest@4bff7da0]" started-at="2023-09-19T21:29:10 IST" name="TearDown" finished-at="2023-09-19T21:29:10 IST" duration-ms="625" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- com.obsqura.tests.NewProductAddTest -->
+    </test> <!-- Test6 -->
+    <test started-at="2023-09-19T21:29:05 IST" name="Test7" finished-at="2023-09-19T21:29:22 IST" duration-ms="17122">
+      <class name="com.obsqura.tests.PushNotificationSaveTest">
+        <test-method is-config="true" signature="InitializeDriver(java.lang.String)[pri:0, instance:com.obsqura.tests.PushNotificationSaveTest@18ece7f4]" started-at="2023-09-19T21:29:05 IST" name="InitializeDriver" finished-at="2023-09-19T21:29:12 IST" duration-ms="6863" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitializeDriver -->
+        <test-method signature="MyPushSaveTest()[pri:0, instance:com.obsqura.tests.PushNotificationSaveTest@18ece7f4]" started-at="2023-09-19T21:29:12 IST" name="MyPushSaveTest" finished-at="2023-09-19T21:29:22 IST" duration-ms="9888" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MyPushSaveTest -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.obsqura.tests.PushNotificationSaveTest@18ece7f4]" started-at="2023-09-19T21:29:22 IST" name="TearDown" finished-at="2023-09-19T21:29:22 IST" duration-ms="362" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- com.obsqura.tests.PushNotificationSaveTest -->
+    </test> <!-- Test7 -->
+    <test started-at="2023-09-19T21:29:11 IST" name="Test9" finished-at="2023-09-19T21:29:25 IST" duration-ms="14551">
+      <class name="com.obsqura.tests.ResetTest">
+        <test-method is-config="true" signature="InitializeDriver(java.lang.String)[pri:0, instance:com.obsqura.tests.ResetTest@4808bc9b]" started-at="2023-09-19T21:29:11 IST" name="InitializeDriver" finished-at="2023-09-19T21:29:20 IST" duration-ms="9412" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitializeDriver -->
+        <test-method signature="MyReset()[pri:0, instance:com.obsqura.tests.ResetTest@4808bc9b]" started-at="2023-09-19T21:29:20 IST" name="MyReset" finished-at="2023-09-19T21:29:25 IST" duration-ms="4687" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MyReset -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.obsqura.tests.ResetTest@4808bc9b]" started-at="2023-09-19T21:29:25 IST" name="TearDown" finished-at="2023-09-19T21:29:25 IST" duration-ms="423" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- com.obsqura.tests.ResetTest -->
+    </test> <!-- Test9 -->
+    <test started-at="2023-09-19T21:29:07 IST" name="Test8" finished-at="2023-09-19T21:29:31 IST" duration-ms="24100">
+      <class name="com.obsqura.tests.CreateContact">
+        <test-method is-config="true" signature="InitializeDriver(java.lang.String)[pri:0, instance:com.obsqura.tests.CreateContact@264f218]" started-at="2023-09-19T21:29:07 IST" name="InitializeDriver" finished-at="2023-09-19T21:29:13 IST" duration-ms="6448" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitializeDriver -->
+        <test-method signature="CreateContactTest()[pri:0, instance:com.obsqura.tests.CreateContact@264f218]" started-at="2023-09-19T21:29:13 IST" name="CreateContactTest" finished-at="2023-09-19T21:29:29 IST" duration-ms="16059" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateContactTest -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.obsqura.tests.CreateContact@264f218]" started-at="2023-09-19T21:29:29 IST" name="TearDown" finished-at="2023-09-19T21:29:31 IST" duration-ms="1581" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- com.obsqura.tests.CreateContact -->
+    </test> <!-- Test8 -->
+    <test started-at="2023-09-19T21:28:57 IST" name="Test5" finished-at="2023-09-19T21:29:31 IST" duration-ms="34838">
+      <class name="com.obsqura.tests.CreateContact">
+        <test-method is-config="true" signature="InitializeDriver(java.lang.String)[pri:0, instance:com.obsqura.tests.CreateContact@222a59e6]" started-at="2023-09-19T21:28:57 IST" name="InitializeDriver" finished-at="2023-09-19T21:29:06 IST" duration-ms="9247" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitializeDriver -->
+        <test-method signature="CreateContactTest()[pri:0, instance:com.obsqura.tests.CreateContact@222a59e6]" started-at="2023-09-19T21:29:06 IST" name="CreateContactTest" finished-at="2023-09-19T21:29:30 IST" duration-ms="24541" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateContactTest -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.obsqura.tests.CreateContact@222a59e6]" started-at="2023-09-19T21:29:30 IST" name="TearDown" finished-at="2023-09-19T21:29:31 IST" duration-ms="1035" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- com.obsqura.tests.CreateContact -->
+    </test> <!-- Test5 -->
+    <test started-at="2023-09-19T21:29:25 IST" name="Test11" finished-at="2023-09-19T21:29:37 IST" duration-ms="11707">
+      <class name="com.obsqura.tests.ManagePaymentTest">
+        <test-method is-config="true" signature="InitializeDriver(java.lang.String)[pri:0, instance:com.obsqura.tests.ManagePaymentTest@478db956]" started-at="2023-09-19T21:29:25 IST" name="InitializeDriver" finished-at="2023-09-19T21:29:31 IST" duration-ms="5757" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitializeDriver -->
+        <test-method signature="MyManagePayment()[pri:0, instance:com.obsqura.tests.ManagePaymentTest@478db956]" started-at="2023-09-19T21:29:31 IST" name="MyManagePayment" finished-at="2023-09-19T21:29:37 IST" duration-ms="5565" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MyManagePayment -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.obsqura.tests.ManagePaymentTest@478db956]" started-at="2023-09-19T21:29:37 IST" name="TearDown" finished-at="2023-09-19T21:29:37 IST" duration-ms="364" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- com.obsqura.tests.ManagePaymentTest -->
+    </test> <!-- Test11 -->
+    <test started-at="2023-09-19T21:29:22 IST" name="Test10" finished-at="2023-09-19T21:29:37 IST" duration-ms="14560">
+      <class name="com.obsqura.tests.ManageLocationTest">
+        <test-method is-config="true" signature="InitializeDriver(java.lang.String)[pri:0, instance:com.obsqura.tests.ManageLocationTest@7de62196]" started-at="2023-09-19T21:29:22 IST" name="InitializeDriver" finished-at="2023-09-19T21:29:28 IST" duration-ms="5556" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitializeDriver -->
+        <test-method signature="MyManageLocationTest()[pri:0, instance:com.obsqura.tests.ManageLocationTest@7de62196]" started-at="2023-09-19T21:29:28 IST" name="MyManageLocationTest" finished-at="2023-09-19T21:29:37 IST" duration-ms="8623" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MyManageLocationTest -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.obsqura.tests.ManageLocationTest@7de62196]" started-at="2023-09-19T21:29:37 IST" name="TearDown" finished-at="2023-09-19T21:29:37 IST" duration-ms="368" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- com.obsqura.tests.ManageLocationTest -->
+    </test> <!-- Test10 -->
+    <test started-at="2023-09-19T21:29:31 IST" name="Test12" finished-at="2023-09-19T21:29:39 IST" duration-ms="7853">
+      <class name="com.obsqura.tests.MobileSliderTest">
+        <test-method is-config="true" signature="InitializeDriver(java.lang.String)[pri:0, instance:com.obsqura.tests.MobileSliderTest@19b843ba]" started-at="2023-09-19T21:29:31 IST" name="InitializeDriver" finished-at="2023-09-19T21:29:36 IST" duration-ms="4416" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitializeDriver -->
+        <test-method signature="MyMobileSlider()[pri:0, instance:com.obsqura.tests.MobileSliderTest@19b843ba]" started-at="2023-09-19T21:29:36 IST" name="MyMobileSlider" finished-at="2023-09-19T21:29:39 IST" duration-ms="3194" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MyMobileSlider -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.obsqura.tests.MobileSliderTest@19b843ba]" started-at="2023-09-19T21:29:39 IST" name="TearDown" finished-at="2023-09-19T21:29:39 IST" duration-ms="229" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- com.obsqura.tests.MobileSliderTest -->
+    </test> <!-- Test12 -->
+  </suite> <!-- Suite -->
 </testng-results>
