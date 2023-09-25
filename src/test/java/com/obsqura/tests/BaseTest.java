@@ -18,11 +18,7 @@ import com.obsqura.pages.ExpenseCategoryPage;
 import com.obsqura.pages.HomePage;
 import com.obsqura.pages.ListDeliveryBoyPage;
 import com.obsqura.pages.LoginPage;
-import com.obsqura.pages.ManageLocationPage;
-import com.obsqura.pages.ManagePaymentPage;
-import com.obsqura.pages.MobileSliderPage;
 import com.obsqura.pages.ProductsPage;
-import com.obsqura.pages.PushNotificationPage;
 import com.obsqura.utilities.TestProperties;
 
 import context.WebdriverContext;
@@ -32,17 +28,12 @@ public class BaseTest {
 	 protected WebDriver driver;
 	Properties prop;
 
-<<<<<<< HEAD
+
 	@Parameters({"browserName"})
 	@BeforeMethod(alwaysRun=true)
 	public void InitializeDriver() throws IOException  {
-=======
-	@Parameters({"browserName"})  //for cross browser testing
-	@BeforeMethod
-	public void InitializeDriver(String browserName) throws IOException  {
->>>>>>> b96ebcb734998ab3b405267ddf5fc5575a35ee4f
 		prop = TestProperties.GetProperties(); 
-        //String browserName=prop.getProperty("browser");
+        String browserName=prop.getProperty("browser");
 		String Environment = prop.getProperty("Environment");
 		String Url = prop.getProperty(Environment);
 			
@@ -76,10 +67,8 @@ public class BaseTest {
 	public  ExpenseCategoryPage ecp;
 	public ListDeliveryBoyPage ldp;
 	public ContactUsPage cp;
-	public PushNotificationPage pn;
-	public ManageLocationPage mp;
-	public ManagePaymentPage mpp;
-	public MobileSliderPage ms;
+
+
 	/**
 	 * Intialize Globally
 	 */
@@ -90,20 +79,13 @@ public class BaseTest {
 	    ecp = new ExpenseCategoryPage(driver);
 	    ldp=new ListDeliveryBoyPage(driver);
 	    cp = new ContactUsPage(driver);
-	    pn = new PushNotificationPage(driver);
-	    mp = new ManageLocationPage(driver);
-	    mpp = new ManagePaymentPage(driver);
-	    ms = new MobileSliderPage(driver);
 	}
 	
 	
 	@AfterMethod(alwaysRun= true)
 	public void TearDown() {
-<<<<<<< HEAD
-       driver.quit();
-=======
 
-		driver.quit();
->>>>>>> b96ebcb734998ab3b405267ddf5fc5575a35ee4f
+       driver.quit();
+
 	}
 }

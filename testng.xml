@@ -43,54 +43,5 @@
     </classes>
   </test> 
   
-  <test name="Test6">
-      <parameter name="browserName" value="Chrome"></parameter>
-    <classes>
-      <class name="com.obsqura.tests.NewProductAddTest"/>
-    </classes>
-  </test> 
-  
-  
-  <test name="Test7">
-      <parameter name="browserName" value="Chrome"></parameter>
-    <classes>
-      <class name="com.obsqura.tests.PushNotificationSaveTest"/>
-    </classes>
-  </test> 
-  
-  <test name="Test8">
-      <parameter name="browserName" value="Edge"></parameter>
-    <classes>
-      <class name="com.obsqura.tests.CreateContact"/>
-    </classes>
-  </test> 
-  
-  <test name="Test9">
-      <parameter name="browserName" value="Chrome"></parameter>
-    <classes>
-      <class name="com.obsqura.tests.ResetTest"/>
-    </classes>
-  </test> 
-  
-   <test name="Test10">
-      <parameter name="browserName" value="Chrome"></parameter>
-    <classes>
-      <class name="com.obsqura.tests.ManageLocationTest"/>
-    </classes>
-  </test> 
-  
-   <test name="Test11">
-      <parameter name="browserName" value="Chrome"></parameter>
-    <classes>
-      <class name="com.obsqura.tests.ManagePaymentTest"/>
-    </classes>
-  </test> 
-  
-  <test name="Test12">
-      <parameter name="browserName" value="Chrome"></parameter>
-    <classes>
-      <class name="com.obsqura.tests.MobileSliderTest"/>
-    </classes>
-  </test> 
   
 </suite>

@@ -20,7 +20,7 @@ public class CreateContact extends BaseTest {
 		    for(Person person :personList) {
 			cp.EnterDataIntoForm(person);
 			
-			String alertText = cp.GetContaactUpdateAlertText();
+			String alertText = cp.GetContaactUpdateAlertText().split("!")[1].trim();
 			
 			Assert.assertEquals(alertText, "Contact Updated Successfully");
 	

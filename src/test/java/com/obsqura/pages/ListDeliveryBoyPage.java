@@ -51,7 +51,7 @@ public class ListDeliveryBoyPage extends PageUtility {
 	}
 	
 	public String ValidateDeliveryBoyIsCreated() {
-		return GetElementText(alert);
+		return GetElementText(alert).split("!")[1].trim();
 	}
 	
 }

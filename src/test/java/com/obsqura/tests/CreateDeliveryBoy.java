@@ -15,20 +15,13 @@ public class CreateDeliveryBoy extends BaseTest{
 		String date= DateUtility.GetCurrentDate();
 		ldp.CreateDeliveryBoy(date);
 		
-<<<<<<< HEAD
+
 		ldp.ValidateDeliveryBoyIsCreated();	
-=======
 		String alertMsg = ldp.ValidateDeliveryBoyIsCreated();
 		
-		if(alertMsg.contains("Delivery Boy Details Created Successfully")) {
-			Assert.assertTrue(true);
-		}else {
-			Assert.fail();
-		}
+	    Assert.assertEquals(alertMsg, "Delivery Boy Details Created Successfully");
 
 
-		
->>>>>>> b96ebcb734998ab3b405267ddf5fc5575a35ee4f
 	}
 	
 	
