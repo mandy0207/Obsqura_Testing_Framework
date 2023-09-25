@@ -3,12 +3,22 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="com.obsqura.tests.CreateandDeleteExpense">
         <methods>
           <include name="InitializeDriver"/>
           <include name="MyCreateDeleteExpense"/>
         </methods>
       </class> <!-- com.obsqura.tests.CreateandDeleteExpense -->
+=======
+      <class name="com.obsqura.tests.ManageLocationTest">
+        <methods>
+          <include name="TearDown"/>
+          <include name="InitializeDriver"/>
+          <include name="MyManageLocationTest"/>
+        </methods>
+      </class> <!-- com.obsqura.tests.ManageLocationTest -->
+>>>>>>> b96ebcb734998ab3b405267ddf5fc5575a35ee4f
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

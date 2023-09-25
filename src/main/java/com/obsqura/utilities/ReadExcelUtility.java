@@ -21,10 +21,10 @@ public class ReadExcelUtility {
 		try {
             FileInputStream fileInputStream = new FileInputStream(Constants.Excel_datasheet);
             Workbook workbook = new XSSFWorkbook(fileInputStream);
-            Sheet sheet = workbook.getSheetAt(0);
-            int lastRowNum = sheet.getLastRowNum();
+            Sheet sheet = workbook.getSheetAt(0); //get first sheet
+            int lastRowNum = sheet.getLastRowNum(); //to get the number of iterations
             for (int rowIndex = 1; rowIndex <=lastRowNum; rowIndex++) { 
-                Row row = sheet.getRow(rowIndex);
+                Row row = sheet.getRow(rowIndex); // to get first row
 
                 int phone = (int) row.getCell(0).getNumericCellValue();
                 String email = row.getCell(1).getStringCellValue();

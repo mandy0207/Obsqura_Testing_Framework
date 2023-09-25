@@ -54,7 +54,7 @@ public class PageUtility {
 	 * @param element
 	 */
 	public void WaitUntilVisible(WebElement element) {
-	
+		wait.until(ExpectedConditions.elementToBeClickable(element));
 	}
 	
 	

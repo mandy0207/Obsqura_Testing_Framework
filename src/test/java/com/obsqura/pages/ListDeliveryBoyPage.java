@@ -34,6 +34,9 @@ public class ListDeliveryBoyPage extends PageUtility {
 	@FindBy(css= ".card-footer button")
 	private WebElement saveBtn;
 	
+	@FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']")
+	private WebElement alert;
+	
 	
 	public void CreateDeliveryBoy(String date) {
 		ClickElement(newBtn);
@@ -47,8 +50,8 @@ public class ListDeliveryBoyPage extends PageUtility {
 		
 	}
 	
-	public void ValidateDeliveryBoyIsCreated() {
-		
+	public String ValidateDeliveryBoyIsCreated() {
+		return GetElementText(alert);
 	}
 	
 }

@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,12 +50,12 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Sask\Code\workspace\GrocerryApp\testng.xml</span>
+                    <span>C:\Users\jenom\eclipse-workspace\GroceryApp\Grocery\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-Suite" class="navigator-link ">
-                    <span class="test-stats">5 tests</span>
+                    <span class="test-stats">11 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,31 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">11 methods, 3 failed,   8 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.obsqura.tests.CreateContact" class="method navigator-link" hash-for-method="CreateContactTest">CreateContactTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.obsqura.tests.CreateContact" class="method navigator-link" hash-for-method="CreateContactTest">CreateContactTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.obsqura.tests.ManageLocationTest" class="method navigator-link" hash-for-method="MyManageLocationTest">MyManageLocationTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,11 +125,6 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
                     <div class="method-list-content passed suite-Suite">
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.obsqura.tests.CreateContact" class="method navigator-link" hash-for-method="CreateContactTest">CreateContactTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.obsqura.tests.CreateDeliveryBoy" class="method navigator-link" hash-for-method="CreateDeliveryBoyTest">CreateDeliveryBoyTest</a> <!-- method navigator-link -->
@@ -119,6 +138,26 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.obsqura.tests.LoginTest" class="method navigator-link" hash-for-method="MyLoginTest">MyLoginTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.obsqura.tests.ManagePaymentTest" class="method navigator-link" hash-for-method="MyManagePayment">MyManagePayment</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.obsqura.tests.NewProductAddTest" class="method navigator-link" hash-for-method="MyNewProductAdd">MyNewProductAdd</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.obsqura.tests.PushNotificationSaveTest" class="method navigator-link" hash-for-method="MyPushSaveTest">MyPushSaveTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.obsqura.tests.ResetTest" class="method navigator-link" hash-for-method="MyReset">MyReset</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -138,24 +177,56 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.obsqura.tests.CreateandDeleteExpense</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.obsqura.tests.ManageLocationTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="MyCreateDeleteExpense">
-                  </a> <!-- MyCreateDeleteExpense -->
-                  <span class="method-name">MyCreateDeleteExpense</span>
+                  <a name="MyManageLocationTest">
+                  </a> <!-- MyManageLocationTest -->
+                  <span class="method-name">MyManageLocationTest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//i[@class=&apos;nav-icon fas fa-map-marker&apos;]&quot;}
+  (Session info: chrome=116.0.5845.188)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3086d349cc3681e08539d68cb0bc0a1f, findElement {using=xpath, value=//i[@class=&apos;nav-icon fas fa-map-marker&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\jenom\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50956}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50956/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3086d349cc3681e08539d68cb0bc0a1f
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
+	at com.obsqura.pages.ManageLocationPage.NavigateToManageLocation(ManageLocationPage.java:43)
+	at com.obsqura.tests.ManageLocationTest.MyManageLocationTest(ManageLocationTest.java:12)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">com.obsqura.tests.CreateContact</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -164,10 +235,83 @@
                   <a name="CreateContactTest">
                   </a> <!-- CreateContactTest -->
                   <span class="method-name">CreateContactTest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;alert alert-success alert-dismissible&apos;]&quot;}
+  (Session info: chrome=116.0.5845.188)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [de4e77c02fe3f26952efca82703f9a5b, findElement {using=xpath, value=//div[@class=&apos;alert alert-success alert-dismissible&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\jenom\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50819}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50819/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: de4e77c02fe3f26952efca82703f9a5b
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.getText(Unknown Source)
+	at com.obsqura.utilities.PageUtility.GetElementText(PageUtility.java:67)
+	at com.obsqura.pages.ContactUsPage.GetContaactUpdateAlertText(ContactUsPage.java:66)
+	at com.obsqura.tests.CreateContact.CreateContactTest(CreateContact.java:23)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CreateContactTest">
+                  </a> <!-- CreateContactTest -->
+                  <span class="method-name">CreateContactTest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;alert alert-success alert-dismissible&apos;]&quot;}
+  (Session info: chrome=116.0.5845.188)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f863a43dfc30479b221a49b5da09d09a, findElement {using=xpath, value=//div[@class=&apos;alert alert-success alert-dismissible&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\jenom\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50876}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50876/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f863a43dfc30479b221a49b5da09d09a
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.getText(Unknown Source)
+	at com.obsqura.utilities.PageUtility.GetElementText(PageUtility.java:67)
+	at com.obsqura.pages.ContactUsPage.GetContaactUpdateAlertText(ContactUsPage.java:66)
+	at com.obsqura.tests.CreateContact.CreateContactTest(CreateContact.java:23)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -201,6 +345,81 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
+              <span class="class-name">com.obsqura.tests.CreateandDeleteExpense</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="MyCreateDeleteExpense">
+                  </a> <!-- MyCreateDeleteExpense -->
+                  <span class="method-name">MyCreateDeleteExpense</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.obsqura.tests.ManagePaymentTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="MyManagePayment">
+                  </a> <!-- MyManagePayment -->
+                  <span class="method-name">MyManagePayment</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.obsqura.tests.NewProductAddTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="MyNewProductAdd">
+                  </a> <!-- MyNewProductAdd -->
+                  <span class="method-name">MyNewProductAdd</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.obsqura.tests.PushNotificationSaveTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="MyPushSaveTest">
+                  </a> <!-- MyPushSaveTest -->
+                  <span class="method-name">MyPushSaveTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.obsqura.tests.ResetTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="MyReset">
+                  </a> <!-- MyReset -->
+                  <span class="method-name">MyReset</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">com.obsqura.tests.SearchProductTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -216,7 +435,7 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Sask\Code\workspace\GrocerryApp\testng.xml</span>
+            <span class="header-content">C:\Users\jenom\eclipse-workspace\GroceryApp\Grocery\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -256,6 +475,42 @@
       &lt;class name=&quot;com.obsqura.tests.CreateContact&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test5 --&gt;
+  &lt;test thread-count=&quot;4&quot; parallel=&quot;tests&quot; name=&quot;Test6&quot; verbose=&quot;0&quot;&gt;
+    &lt;parameter name=&quot;browserName&quot; value=&quot;Chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.obsqura.tests.NewProductAddTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test6 --&gt;
+  &lt;test thread-count=&quot;4&quot; parallel=&quot;tests&quot; name=&quot;Test8&quot; verbose=&quot;0&quot;&gt;
+    &lt;parameter name=&quot;browserName&quot; value=&quot;Chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.obsqura.tests.PushNotificationSaveTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test8 --&gt;
+  &lt;test thread-count=&quot;4&quot; parallel=&quot;tests&quot; name=&quot;Test9&quot; verbose=&quot;0&quot;&gt;
+    &lt;parameter name=&quot;browserName&quot; value=&quot;Edge&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.obsqura.tests.CreateContact&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test9 --&gt;
+  &lt;test thread-count=&quot;4&quot; parallel=&quot;tests&quot; name=&quot;Test10&quot; verbose=&quot;0&quot;&gt;
+    &lt;parameter name=&quot;browserName&quot; value=&quot;Chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.obsqura.tests.ResetTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test10 --&gt;
+  &lt;test thread-count=&quot;4&quot; parallel=&quot;tests&quot; name=&quot;Test11&quot; verbose=&quot;0&quot;&gt;
+    &lt;parameter name=&quot;browserName&quot; value=&quot;Chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.obsqura.tests.ManageLocationTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test11 --&gt;
+  &lt;test thread-count=&quot;4&quot; parallel=&quot;tests&quot; name=&quot;Test12&quot; verbose=&quot;0&quot;&gt;
+    &lt;parameter name=&quot;browserName&quot; value=&quot;Chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.obsqura.tests.ManagePaymentTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test12 --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -281,6 +536,24 @@
               <li>
                 <span class="test-name">Test5 (1 class)</span>
               </li>
+              <li>
+                <span class="test-name">Test6 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Test8 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Test9 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Test10 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Test11 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Test12 (1 class)</span>
+              </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
@@ -305,32 +578,56 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(11);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'CreateContactTest')
 data.setCell(0, 2, 'com.obsqura.tests.CreateContact')
-data.setCell(0, 3, 6793);
+data.setCell(0, 3, 48845);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'MyCreateDeleteExpense')
-data.setCell(1, 2, 'com.obsqura.tests.CreateandDeleteExpense')
-data.setCell(1, 3, 6200);
+data.setCell(1, 1, 'MyReset')
+data.setCell(1, 2, 'com.obsqura.tests.ResetTest')
+data.setCell(1, 3, 46699);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'CreateDeliveryBoyTest')
-data.setCell(2, 2, 'com.obsqura.tests.CreateDeliveryBoy')
-data.setCell(2, 3, 3899);
+data.setCell(2, 1, 'CreateContactTest')
+data.setCell(2, 2, 'com.obsqura.tests.CreateContact')
+data.setCell(2, 3, 39262);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'MySearchProductTest')
-data.setCell(3, 2, 'com.obsqura.tests.SearchProductTest')
-data.setCell(3, 3, 3500);
+data.setCell(3, 1, 'MyManageLocationTest')
+data.setCell(3, 2, 'com.obsqura.tests.ManageLocationTest')
+data.setCell(3, 3, 7692);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'MyLoginTest')
-data.setCell(4, 2, 'com.obsqura.tests.LoginTest')
-data.setCell(4, 3, 1515);
+data.setCell(4, 1, 'MyPushSaveTest')
+data.setCell(4, 2, 'com.obsqura.tests.PushNotificationSaveTest')
+data.setCell(4, 3, 7573);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'MyCreateDeleteExpense')
+data.setCell(5, 2, 'com.obsqura.tests.CreateandDeleteExpense')
+data.setCell(5, 3, 7140);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'CreateDeliveryBoyTest')
+data.setCell(6, 2, 'com.obsqura.tests.CreateDeliveryBoy')
+data.setCell(6, 3, 6103);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'MyNewProductAdd')
+data.setCell(7, 2, 'com.obsqura.tests.NewProductAddTest')
+data.setCell(7, 3, 5039);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'MySearchProductTest')
+data.setCell(8, 2, 'com.obsqura.tests.SearchProductTest')
+data.setCell(8, 3, 4577);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'MyManagePayment')
+data.setCell(9, 2, 'com.obsqura.tests.ManagePaymentTest')
+data.setCell(9, 3, 2703);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'MyLoginTest')
+data.setCell(10, 2, 'com.obsqura.tests.LoginTest')
+data.setCell(10, 3, 1188);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 11 seconds</span>
+              <span class="suite-total-time">Total running time: 56 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -363,13 +660,6 @@ return data;
               </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.obsqura.tests.SearchProductTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">InitializeDriver</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
               <div class="chronological-class-name">com.obsqura.tests.CreateandDeleteExpense</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">InitializeDriver</span>
@@ -384,74 +674,207 @@ return data;
               </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.obsqura.tests.CreateandDeleteExpense</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.obsqura.tests.SearchProductTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">InitializeDriver</span>
+                <span class="method-start">1 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">MyCreateDeleteExpense</span>
-                <span class="method-start">5293 ms</span>
+                <span class="method-name">MySearchProductTest</span>
+                <span class="method-start">9852 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.obsqura.tests.CreateDeliveryBoy</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">CreateDeliveryBoyTest</span>
-                <span class="method-start">5350 ms</span>
+                <span class="method-start">9908 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.obsqura.tests.SearchProductTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.obsqura.tests.CreateandDeleteExpense</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">MySearchProductTest</span>
-                <span class="method-start">5571 ms</span>
+                <span class="method-name">MyCreateDeleteExpense</span>
+                <span class="method-start">10027 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.obsqura.tests.LoginTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">MyLoginTest</span>
-                <span class="method-start">6023 ms</span>
+                <span class="method-start">10345 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">TearDown</span>
-                <span class="method-start">7554 ms</span>
+                <span class="method-start">11565 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.obsqura.tests.CreateContact</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">InitializeDriver</span>
-                <span class="method-start">8717 ms</span>
+                <span class="method-start">13791 ms</span>
               </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.obsqura.tests.SearchProductTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">TearDown</span>
-                <span class="method-start">9071 ms</span>
+                <span class="method-start">14432 ms</span>
               </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.obsqura.tests.NewProductAddTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">InitializeDriver</span>
+                <span class="method-start">14557 ms</span>
+              </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.obsqura.tests.CreateDeliveryBoy</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">TearDown</span>
-                <span class="method-start">9249 ms</span>
+                <span class="method-start">16012 ms</span>
               </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.obsqura.tests.PushNotificationSaveTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">InitializeDriver</span>
+                <span class="method-start">16052 ms</span>
+              </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.obsqura.tests.CreateandDeleteExpense</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">TearDown</span>
-                <span class="method-start">11493 ms</span>
+                <span class="method-start">17170 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.obsqura.tests.CreateContact</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">InitializeDriver</span>
+                <span class="method-start">17285 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">CreateContactTest</span>
-                <span class="method-start">13290 ms</span>
+                <span class="method-start">18662 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.obsqura.tests.NewProductAddTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">MyNewProductAdd</span>
+                <span class="method-start">19270 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.obsqura.tests.PushNotificationSaveTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">MyPushSaveTest</span>
+                <span class="method-start">23461 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.obsqura.tests.NewProductAddTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">TearDown</span>
-                <span class="method-start">20083 ms</span>
+                <span class="method-start">24312 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.obsqura.tests.ResetTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">InitializeDriver</span>
+                <span class="method-start">24461 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.obsqura.tests.CreateContact</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">CreateContactTest</span>
+                <span class="method-start">24479 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.obsqura.tests.PushNotificationSaveTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">TearDown</span>
+                <span class="method-start">31036 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.obsqura.tests.ManageLocationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">InitializeDriver</span>
+                <span class="method-start">31174 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.obsqura.tests.ResetTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">MyReset</span>
+                <span class="method-start">33063 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.obsqura.tests.CreateContact</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">TearDown</span>
+                <span class="method-start">58094 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.obsqura.tests.ManagePaymentTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">InitializeDriver</span>
+                <span class="method-start">58145 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">MyManagePayment</span>
+                <span class="method-start">67477 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.obsqura.tests.ManageLocationTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">MyManageLocationTest</span>
+                <span class="method-start">68679 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.obsqura.tests.ManagePaymentTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">TearDown</span>
+                <span class="method-start">70181 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.obsqura.tests.CreateContact</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">TearDown</span>
+                <span class="method-start">73473 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.obsqura.tests.ManageLocationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">TearDown</span>
+                <span class="method-start">76590 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.obsqura.tests.ResetTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">TearDown</span>
+                <span class="method-start">79766 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
