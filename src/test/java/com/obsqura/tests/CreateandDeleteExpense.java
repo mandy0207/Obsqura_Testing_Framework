@@ -11,10 +11,10 @@ import com.obsqura.utilities.DateUtility;
 
 public class CreateandDeleteExpense  extends BaseTest{
 	
-	@Test
+	@Test(groups= {"Smoke"})
 	public void MyCreateDeleteExpense() throws IOException {
-		
 		lp.Login();
+		
 		hp.NavigateToManageExpense();
 	
 		String date=DateUtility.GetCurrentDate();
@@ -26,12 +26,8 @@ public class CreateandDeleteExpense  extends BaseTest{
 		 * Validation
 		 */
 			
-		if(text.contains("Expense Category Deleted Successfully")) {
-			Assert.assertTrue(true);
-		}
-		else {
 		Assert.assertEquals(text, "Expense Category Deleted Successfully");
-		}
+
 	}
 
 }

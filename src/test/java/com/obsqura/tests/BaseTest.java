@@ -29,7 +29,7 @@ public class BaseTest {
 	Properties prop;
 
 	@Parameters({"browserName"})
-	@BeforeMethod
+	@BeforeMethod(alwaysRun=true)
 	public void InitializeDriver() throws IOException  {
 		prop = TestProperties.GetProperties(); 
         String browserName=prop.getProperty("browser");
@@ -37,8 +37,7 @@ public class BaseTest {
 		String Url = prop.getProperty(Environment);
 			
 		if (browserName.equals("Chrome")) {
-			driver = new ChromeDriver();
-			
+			driver = new ChromeDriver();	
 		}
 
 		else if (browserName.equals("Edge")) {
@@ -80,13 +79,8 @@ public class BaseTest {
 	}
 	
 	
-
-	
-	
-	
-	@AfterMethod
+	@AfterMethod(alwaysRun= true)
 	public void TearDown() {
-
-		//driver.quit();
+       driver.quit();
 	}
 }

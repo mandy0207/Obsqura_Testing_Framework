@@ -21,13 +21,9 @@ public class CreateContact extends BaseTest {
 			cp.EnterDataIntoForm(person);
 			
 			String alertText = cp.GetContaactUpdateAlertText();
-			if(alertText.contains("Contact Updated Successfully")) {
-				Assert.assertTrue(true);
-			}
-			else {
-				Assert.fail();
-			}
 			
+			Assert.assertEquals(alertText, "Contact Updated Successfully");
+	
 			
 		}
 		

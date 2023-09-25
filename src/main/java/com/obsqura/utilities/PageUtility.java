@@ -46,7 +46,7 @@ public class PageUtility {
 	
 	public void SelectFromStaticDropdown(WebElement dropdown, String value) {
 		 Select staticDropdown = new Select(dropdown);
-	     staticDropdown.selectByValue(value);
+	     staticDropdown.selectByVisibleText(value);
 		
 	}
 	/**
@@ -72,6 +72,10 @@ public class PageUtility {
 		wait.until(ExpectedConditions.elementToBeClickable(element));
 	
 	}
+	
+	
+	
+	
 	
 	public void ScrollUp() {
 		JavascriptExecutor js = (JavascriptExecutor)driver;

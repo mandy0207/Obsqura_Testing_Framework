@@ -1,25 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="3" total="5" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-13T11:18:16 EDT" name="Default suite" finished-at="2023-09-13T11:18:26 EDT" duration-ms="10694">
+  <suite started-at="2023-09-25T14:27:09 EDT" name="Suite" finished-at="2023-09-25T14:27:27 EDT" duration-ms="17938">
     <groups>
+      <group name="Smoke">
+        <method signature="CreateDeliveryBoy.CreateDeliveryBoyTest()[pri:0, instance:com.obsqura.tests.CreateDeliveryBoy@30c15d8b]" name="CreateDeliveryBoyTest" class="com.obsqura.tests.CreateDeliveryBoy"/>
+        <method signature="CreateandDeleteExpense.MyCreateDeleteExpense()[pri:0, instance:com.obsqura.tests.CreateandDeleteExpense@6f1de4c7]" name="MyCreateDeleteExpense" class="com.obsqura.tests.CreateandDeleteExpense"/>
+      </group> <!-- Smoke -->
     </groups>
-    <test started-at="2023-09-13T11:18:16 EDT" name="Default test" finished-at="2023-09-13T11:18:26 EDT" duration-ms="10694">
+    <test started-at="2023-09-25T14:27:09 EDT" name="MyTest" finished-at="2023-09-25T14:27:27 EDT" duration-ms="17938">
       <class name="com.obsqura.tests.CreateDeliveryBoy">
-        <test-method is-config="true" signature="InitializeDriver()[pri:0, instance:com.obsqura.tests.CreateDeliveryBoy@18078bef]" started-at="2023-09-13T11:18:16 EDT" name="InitializeDriver" finished-at="2023-09-13T11:18:22 EDT" duration-ms="6097" status="PASS">
+        <test-method is-config="true" signature="InitializeDriver()[pri:0, instance:com.obsqura.tests.CreateDeliveryBoy@30c15d8b]" started-at="2023-09-25T14:27:20 EDT" name="InitializeDriver" finished-at="2023-09-25T14:27:23 EDT" duration-ms="3467" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InitializeDriver -->
-        <test-method signature="CreateDeliveryBoyTest()[pri:0, instance:com.obsqura.tests.CreateDeliveryBoy@18078bef]" started-at="2023-09-13T11:18:22 EDT" name="CreateDeliveryBoyTest" finished-at="2023-09-13T11:18:26 EDT" duration-ms="4493" status="PASS">
+        <test-method signature="CreateDeliveryBoyTest()[pri:0, instance:com.obsqura.tests.CreateDeliveryBoy@30c15d8b]" started-at="2023-09-25T14:27:23 EDT" name="CreateDeliveryBoyTest" finished-at="2023-09-25T14:27:27 EDT" duration-ms="4130" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateDeliveryBoyTest -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.obsqura.tests.CreateDeliveryBoy@18078bef]" started-at="2023-09-13T11:18:26 EDT" name="TearDown" finished-at="2023-09-13T11:18:26 EDT" duration-ms="2" status="PASS">
+      </class> <!-- com.obsqura.tests.CreateDeliveryBoy -->
+      <class name="com.obsqura.tests.CreateandDeleteExpense">
+        <test-method is-config="true" signature="InitializeDriver()[pri:0, instance:com.obsqura.tests.CreateandDeleteExpense@6f1de4c7]" started-at="2023-09-25T14:27:09 EDT" name="InitializeDriver" finished-at="2023-09-25T14:27:14 EDT" duration-ms="4572" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TearDown -->
-      </class> <!-- com.obsqura.tests.CreateDeliveryBoy -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- InitializeDriver -->
+        <test-method signature="MyCreateDeleteExpense()[pri:0, instance:com.obsqura.tests.CreateandDeleteExpense@6f1de4c7]" started-at="2023-09-25T14:27:14 EDT" name="MyCreateDeleteExpense" finished-at="2023-09-25T14:27:20 EDT" duration-ms="5718" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MyCreateDeleteExpense -->
+      </class> <!-- com.obsqura.tests.CreateandDeleteExpense -->
+    </test> <!-- MyTest -->
+  </suite> <!-- Suite -->
 </testng-results>

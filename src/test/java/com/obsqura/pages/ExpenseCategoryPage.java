@@ -68,7 +68,8 @@ public class ExpenseCategoryPage extends PageUtility{
 		ClickElement(searchBtn2);
 		ClickElement(deleteBtn);
 		AcceptAlert();
-		String text = GetElementText(deleteAlertText);
+		String text = GetElementText(deleteAlertText).split("!")[1].trim();
+		System.out.println(text);
 		return text;
 		
 	}

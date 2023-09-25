@@ -4,7 +4,7 @@
 
 <listeners>
 <listener class-name="com.obsqura.listeners.Listeners"></listener>
-<!-- <listener class-name="com.obsqura.listeners.MyTransFormer"></listener> -->
+<listener class-name="com.obsqura.listeners.MyTransFormer"></listener> 
 </listeners>
 
   <test name="Test1">
